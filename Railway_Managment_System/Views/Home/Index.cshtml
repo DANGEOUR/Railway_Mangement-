@@ -1,0 +1,66 @@
+﻿@model Railway_Managment_System.Models.Login;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/Login.cshtml";
+}
+
+<style>
+
+    
+    .container{
+        display: block;
+        width: 50%;
+        height : 80vh;
+        margin-top:50px;
+    }
+
+
+
+    .shir{
+        width : 100px;
+        height : 100px;
+    }
+    form .btn{
+           display : block;
+           margin :auto;
+    }
+    .flaggif{
+        margin-left:10px;
+        margin-top:10px;
+    }
+
+
+
+</style>
+
+<title>Indian Railway Management System || By Shaheer & Ayan</title>
+<link href="/img/shir.png" rel="icon">
+
+
+
+<div class="flaggif">
+    <img src="/img/indiagif.gif" width="50" height="50" >
+</div>
+
+<div class="container my-5 login_form">
+    <h2 class="text-center"><img src="/img/shir.png" class="shir"><span style="color:#cb8d17;">Indian Railway</span> Managment System</h2>
+    <h4 class="text-success text-center">LogIn</h4>
+    <form method="post" asp-action="Login" asp-controller="login">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Enter your Registerd Email</label>
+            <input type="email" class="form-control" asp-for="Email"  id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Enter your Correct Password</label>
+            <input type="password" class="form-control" asp-for="Password" id="exampleInputPassword1">
+        </div>
+     
+        <button type="submit" class="btn btn-warning" style="color:white;">LogIn</button>
+    </form>
+
+    <div style="display:block; margin:auto;">
+        <p class="text-center text-warning my-3 fs-3">भारतीय रेलवे का नेटवर्क दुनिया में सबसे बड़ा और विविधतापूर्ण है, जो देश की धड़कन को जोड़ता है।</p>
+    </div>
+</div>
+

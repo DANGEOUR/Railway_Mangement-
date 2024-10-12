@@ -1,0 +1,56 @@
+﻿@model Railway_Managment_System.Models.Train;
+@{
+    ViewData["Title"] = "Trainedit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container">
+    <h2 class="text-success text-center my-5"> <img src="/img/shir.png" width="75" height="75"> <span style="color:#CD901F;">Train Detail</span><span style="color:green;">Update</span></h2>
+    <form method="post" asp-action="trainupdate" asp-controller="Train_detail">
+        <input type="hidden" asp-for="Id">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Trian Name</label>
+            <input type="text" asp-for="TrainName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Departure</label>
+            <input type="text" asp-for="Departure" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Departure Time</label>
+            <input type="time" asp-for="DepartureTime" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Arrival</label>
+            <input type="text" asp-for="Arrival" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Capacity</label>
+            <input type="number" asp-for="Capacity" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">One Ac</label>
+            <input type="number" asp-for="OneAc" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Two Ac</label>
+            <input type="number" asp-for="TwoAc" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Three Ac</label>
+            <input type="number" asp-for="ThreeAc" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Sleeper</label>
+            <input type="number" asp-for="Sleeper" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">General</label>
+            <input type="number" asp-for="General" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">Update Train</button>
+    </form>
+</div>

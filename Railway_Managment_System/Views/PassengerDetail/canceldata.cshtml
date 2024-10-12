@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "canceldata";
+}
+
+<div class="container">
+   
+    <h2 class="text-success text-center"> <img src="/img/shir.png" width="75" height="75">  <span style="color:#CD901F;">Ticket Cancelation</span> <span style="color:green;">Details</span> </h2>
+    <p class="text-success">@ViewBag.message</p>
+
+    <table class="table" id="myTable">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Passenger Name</th>
+                <th scope="col">Passenger Email</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.CId</th>
+                    <td>@item.PassengerName</td>
+                    <td>@item.PassengerEmail</td>
+
+                    <td>
+                        <a asp-action="FinalCancelTicket" asp-route-id="@item.CId" asp-controller="PassengerDetail" class="btn btn-warning">Ticket Cancel</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>

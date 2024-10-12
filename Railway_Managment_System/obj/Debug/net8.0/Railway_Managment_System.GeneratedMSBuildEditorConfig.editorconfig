@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Railway_Managment_System
+build_property.RootNamespace = Railway_Managment_System
+build_property.ProjectDir = C:\Users\17.11.23\source\repos\Railway_Managment_System\Railway_Managment_System\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\17.11.23\source\repos\Railway_Managment_System\Railway_Managment_System
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/classrate/rates.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcY2xhc3NyYXRlXHJhdGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/fareDetail/editfare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZmFyZURldGFpbFxlZGl0ZmFyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/fareDetail/Fare.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZmFyZURldGFpbFxGYXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/fareDetail/faredata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZmFyZURldGFpbFxmYXJlZGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/Home/TrainMaster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmFpbk1hc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/PassengerDetail/canceldata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc2VuZ2VyRGV0YWlsXGNhbmNlbGRhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/PassengerDetail/cancelticket.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc2VuZ2VyRGV0YWlsXGNhbmNlbHRpY2tldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/PassengerDetail/passengerdata.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc2VuZ2VyRGV0YWlsXHBhc3NlbmdlcmRhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/PassengerDetail/passengerdetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc2VuZ2VyRGV0YWlsXHBhc3NlbmdlcmRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/PassengerDetail/passengeredit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFzc2VuZ2VyRGV0YWlsXHBhc3NlbmdlcmVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/Shared/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/Train_detail/Trainedit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5fZGV0YWlsXFRyYWluZWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/Train_detail/train_data.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5fZGV0YWlsXHRyYWluX2RhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/17.11.23/source/repos/Railway_Managment_System/Railway_Managment_System/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wrc3d4krr3

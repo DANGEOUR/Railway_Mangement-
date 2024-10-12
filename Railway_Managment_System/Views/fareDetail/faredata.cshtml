@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "faredata";
+}
+
+<div class="container">
+
+
+    <h2 class="text-success text-center my-5"> <img src="/img/shir.png" width="75" height="75"> <span style="color:#CD901F;">Fare</span> <span style="color:green;">Data</span>  </h2>
+        
+
+
+    <table class="table" id="myTable">
+        <thead>
+            <tr>
+                <th scope="col">Fare_Id</th>
+                <th scope="col">Train Name</th>
+                <th scope="col">Class</th>
+                <th scope="col">Rate</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.FId</th>
+                    <td>@item.TrainId</td>
+                    <td>@item.Class</td>
+                    <td>@item.Rate</td>
+                    <td><a asp-action="editfare" asp-controller="fareDetail" asp-route-id="@item.FId" class="btn btn-warning">Edit</a><a class="btn btn-danger ms-2" asp-action="fareDelete" asp-controller="fareDetail" asp-route-id="@item.FId">Delete</a></td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>
+

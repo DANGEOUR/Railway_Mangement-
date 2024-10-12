@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewData["Title"] = "passengerdata";
+}
+
+
+
+<div class="container">
+
+
+    <h2 class="text-success my-5 text-center"> <img src="/img/shir.png" width="75" height="75"> <span style="color:#CD901F;">Passenger</span> <span style="color:green;">Data</span> </h2>
+
+
+    <table class="table" id="myTable">
+        <thead>
+            <tr>
+                <th scope="col">Ticket Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Passenger</th>
+                <th scope="col">D O T</th>
+                <th scope="col">Class</th>
+                <th scope="col">Train Id</th>
+                <th scope="col">Total Fare</th>
+                <th scope="col">Action</th>
+                <th scope="col">Cancel Ticket</th>
+
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.TicketId</th>
+                    <td>@item.Name</td>
+                    <td>@item.Age</td>
+                    <td>@item.Gender</td>
+                    <td>@item.Passengers</td>
+                    <td>@item.DateOfTarvel</td>
+                    <td>@item.Class</td>
+                    <td>@item.TrainId</td>
+                    <td>@item.TotalFair</td>
+                    <td><a asp-action="passengeredit" asp-route-id="@item.TicketId" class="btn btn-warning">Edit</a><a asp-action="passengerdelete" asp-route-id="@item.TicketId" asp-controller="PassengerDetail" class="btn btn-danger ms-2">Delete</a></td>
+                    <td><a class="btn btn-success" asp-action="cancelticket" asp-route-id="@item.TicketId" asp-controller="PassengerDetail">Cancel</a></td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>
+
+                     

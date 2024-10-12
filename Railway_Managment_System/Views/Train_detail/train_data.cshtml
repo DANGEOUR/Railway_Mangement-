@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "train_data";
+}
+
+<div class="container">
+
+
+
+    <h3 class="text-success text-center my-5"> <img src="/img/shir.png" width="75" height="75"> <span style="color:#CD901F;">Train</span> <span style="color:green;">Data </span></h3>
+
+
+    <table class="table" id="myTable">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Train</th>
+                <th scope="col">Departure</th>
+                <th scope="col">D Time</th>
+                <th scope="col">Arrival</th>
+                <th scope="col">Capacity</th>
+                <th scope="col">One_Ac</th>
+                <th scope="col">Two_Ac</th>
+                <th scope="col">Three_Ac</th>
+                <th scope="col">Sleeper</th>
+                <th scope="col">General</th>
+                <th scope="col">Delete</th>
+                <th scope="col">Edit</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            
+            @foreach(var item in Model)
+            {
+                
+            <tr>
+                <th scope="row">@item.Id</th>
+                    <td>@item.TrainName</td>
+                    <td>@item.Departure</td>
+                    <td>@item.DepartureTime</td>
+                    <td>@item.Arrival</td>
+                    <td>@item.Capacity</td>
+                    <td>@item.OneAc</td>
+                    <td>@item.TwoAc</td>
+                    <td>@item.ThreeAc</td>
+                    <td>@item.Sleeper</td>
+                    <td>@item.General</td>
+                    <td>
+                        <a asp-action="TrainDelete" asp-controller="Train_detail" asp-route-id="@item.Id" class="btn btn-danger">Delete</a> 
+                    </td>
+
+                    <td> <a asp-action="Trainedit" asp-controller="Train_detail" asp-route-id="@item.Id" class="btn btn-warning">Edit</a></td>
+
+
+            </tr>
+            }
+            
+        </tbody>
+    </table>
+
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>
+

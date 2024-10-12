@@ -1,0 +1,35 @@
+﻿@model Railway_Managment_System.Models.ClassRate;
+@{
+    ViewData["Title"] = "rates";
+}
+
+
+
+<div class="container">
+
+    <h2 class="text-success text-center my-5"> <img src="/img/shir.png" width="75" height="75"> <span style="color:#CD901F;">Class</span> <span style="color:green;">Rates</span> </h2>
+
+
+    <form method="post" asp-action="addrate" asp-controller="classrate">
+        <div class="mb-3">
+            <label for="class" class="form-label">Class</label>
+            <select id="class" class="form-select" asp-for="ClassName">
+                <option selected>Select Class</option>
+                <option value="OneAc">OneAc</option>
+                <option value="TwoAc">TwoAc</option>
+                <option value="ThreeAc">ThreeAc</option>
+                <option value="Sleeper">Sleeper</option>
+                <option value="General">General</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Class Rate</label>
+            <input type="Number" asp-for="ClassRate1" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+
+</div>
+

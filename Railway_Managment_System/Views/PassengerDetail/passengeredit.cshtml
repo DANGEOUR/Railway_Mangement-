@@ -1,0 +1,122 @@
+﻿@model Railway_Managment_System.Models.Ticket;
+@{
+    ViewData["Title"] = "passengeredit";
+}
+
+<div class="container">
+    @{
+        ViewData["Title"] = "passengerdetail";
+    }
+
+
+
+    <div class="container">
+        <h2 class="text-success my-5 text-center"> <img src="/img/shir.png" width="75" height="75"> <span style="color:#CD901F;">Passenger</span> <span style="color:green;">Edit</span> </h2>
+         
+        <form asp-action="PassengerUpdate" asp-controller="PassengerDetail">
+            <input type="hidden" asp-for="TicketId" />
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Passenger Name</label>
+                <input type="text" asp-for="Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Passenger Age</label>
+                <input type="text" asp-for="Age" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Gender</label>
+
+                <select class="form-select" asp-for="Gender" aria-label="Default select example">
+                    <option selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Custom">Custom</option>
+                </select>
+            </div>
+
+
+
+
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Total Passenger</label>
+                <input type="number" asp-for="Passengers" class="form-control" id="tpassenger">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Date of Travel</label>
+                <input type="date" asp-for="DateOfTarvel" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Train Name</label>
+                <select class="form-select" asp-for="TrainId" asp-items="@ViewBag.train" aria-label="Default select example">
+                    @* <option selected>Select Train</option>
+                    @foreach (var item in Model)
+                    {
+                    <option value="@item.Id">@item.TrainName</option>
+
+                    } *@
+                </select>
+            </div>
+
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Class</label>
+                <select class="form-select" asp-for="Class" id="selectedOption" aria-label="Default select example">
+                    <option selected disabled>Select Class</option>
+                    <option value="OneAc">OneAc</option>
+                    <option value="TwoAc">TwoAc</option>
+                    <option value="ThreeAc">ThreeAc</option>
+                    <option value="Sleeper">Sleeper</option>
+                    <option value="General">General</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Total of Tickets</label>
+                <input type="text" asp-for="TotalFair" readonly class="form-control" id="total" aria-describedby="emailHelp">
+
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+   
+</div>
+
+
+<script>
+    document.getElementById("selectedOption").addEventListener('change', () => {
+        let selectedOption = document.getElementById("selectedOption").value;
+        let passengers = document.getElementById("tpassenger").value;
+        let total;
+
+        switch (selectedOption) {
+            case "OneAc":
+                total = passengers * 500;
+                break;
+            case "TwoAc":
+                total = passengers * 400;
+                break;
+            case "ThreeAc":
+                total = passengers * 300;
+                break;
+            case "Sleeper":
+                total = passengers * 200;
+                break;
+            case "General":
+                total = passengers * 100;
+                break;
+            default:
+                total = 0;
+        }
+
+        document.getElementById("total").value = total;
+    });
+</script>
+
+

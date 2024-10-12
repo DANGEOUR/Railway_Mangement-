@@ -1,0 +1,33 @@
+﻿@model Railway_Managment_System.Models.CancelTicket;
+@{
+    ViewData["Title"] = "cancelticket";
+}
+
+
+
+
+<div class="container">
+
+
+
+    
+    <h2 class="text-success text-center my-5"> <img src="/img/shir.png" width="75" height="75"> <span style="color:#CD901F;">Ticket</span> <span style="color:green;">Cancel</span>  </h2>
+
+
+    <form method="post" asp-action="passengercancel" asp-controller="PassengerDetail">
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Passenger Name</label>
+            <input type="text" asp-for="PassengerName" value="@ViewBag.name" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Passenger Email</label>
+            <input type="email" asp-for="PassengerEmail"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+
+</div>
+
